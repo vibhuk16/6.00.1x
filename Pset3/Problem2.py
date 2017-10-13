@@ -12,6 +12,7 @@ def getGuessedWord(secretWord, lettersGuessed):
   returns: String, comprised of letters and underscores that represents
            what letters in secretWord have been guessed so far.
   """
+  
   def getGuessedWord(secretWord, lettersGuessed):
     guessedWord = ""
     for word in secretWord:
