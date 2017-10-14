@@ -1,9 +1,9 @@
- """
- Implement the function getGuessedWord that takes in two parameters 
- A string, secretWord, and a list of letters, lettersGuessed. 
- This function returns a string that is comprised of letters and underscores, 
- based on what letters in lettersGuessed are in secretWord
- """
+"""
+Implement the function getGuessedWord that takes in two parameters 
+A string, secretWord, and a list of letters, lettersGuessed. 
+This function returns a string that is comprised of letters and underscores, 
+based on what letters in lettersGuessed are in secretWord
+"""
  
 def getGuessedWord(secretWord, lettersGuessed):
   """
@@ -13,7 +13,6 @@ def getGuessedWord(secretWord, lettersGuessed):
            what letters in secretWord have been guessed so far.
   """
   
-  def getGuessedWord(secretWord, lettersGuessed):
     guessedWord = ""
     for word in secretWord:
         if word not in lettersGuessed:
