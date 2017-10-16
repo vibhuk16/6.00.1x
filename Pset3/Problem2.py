@@ -18,5 +18,5 @@ def getGuessedWord(secretWord, lettersGuessed):
         if letter not in lettersGuessed:
             guessedWord += " _ "
         else:
-            guessedWord += word
+            guessedWord += letter
     return guessedWord
