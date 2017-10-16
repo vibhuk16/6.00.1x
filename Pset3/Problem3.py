@@ -14,8 +14,8 @@ def getAvailableLetters(lettersGuessed):
     
     allLetters = string.ascii_lowercase
     while lettersGuessed != []:
-        for word in lettersGuessed:
-            endLetters = "".join(allLetters.rsplit(word))
+        for letter in lettersGuessed:
+            endLetters = "".join(allLetters.rsplit(letter))
             allLetters = endLetters
         return endLetters
     return allLetters
