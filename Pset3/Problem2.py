@@ -14,9 +14,9 @@ def getGuessedWord(secretWord, lettersGuessed):
   """
   
     guessedWord = ""
-    for word in secretWord:
-        if word not in lettersGuessed:
-            guessedWord += "_"
+    for letter in secretWord:
+        if letter not in lettersGuessed:
+            guessedWord += " _ "
         else:
             guessedWord += word
     return guessedWord
