@@ -19,22 +19,12 @@ def score(word, f):
        Ex. If f returns the sum of its arguments, then the 
            score for 'adD' is 12 
     """
-    
-    allLetters = string.ascii_lowercase
-    listLetters = list(allLetters)
-    positions = []
-    scores = []
-    for char in word:
-        postion = listLetters.index(char.lower())
-        positions.append(postion + 1)
-    for i in range(len(positions)):
-        score = i * positions[i]
-        scores.append(score)
+
+    scorer = lambda c:ord(c.lower())-96
+    scores = [i*scorer(c) for i,c in enumerate(word)]
+    top = sorted(scores)[-2:]
     if scores == []:
         return 0
-    maxScore = max(scores)
-    scores.remove(maxScore)
-    nextMaxScore = max(scores)
-    return f(maxScore, nextMaxScore)
+    return f(*top)
 def f(x,y):
     return x+y
