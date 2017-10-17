@@ -1,8 +1,8 @@
 """
- Implement the function hangman, which takes one parameter - the secretWord the user is to guess. 
- This starts up an interactive game of Hangman between the user and the computer. 
- Be sure you take advantage of the three helper functions, isWordGuessed, getGuessedWord, and getAvailableLetters, 
- that you've defined in the previous part.
+Implement the function hangman, which takes one parameter - the secretWord the user is to guess. 
+This starts up an interactive game of Hangman between the user and the computer. 
+Be sure you take advantage of the three helper functions, isWordGuessed, getGuessedWord, and getAvailableLetters, 
+that you've defined in the previous part.
 """
 
 def hangman(secretWord):    
