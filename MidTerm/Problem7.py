@@ -23,8 +23,6 @@ def score(word, f):
     scorer = lambda c:ord(c.lower())-96
     scores = [i*scorer(c) for i,c in enumerate(word)]
     top = sorted(scores)[-2:]
-    if scores == []:
-        return 0
     return f(*top)
 def f(x,y):
     return x+y
