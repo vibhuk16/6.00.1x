@@ -30,6 +30,8 @@ def score(word, f):
     for i in range(len(positions)):
         score = i * positions[i]
         scores.append(score)
+    if scores == []:
+        return 0
     maxScore = max(scores)
     scores.remove(maxScore)
     nextMaxScore = max(scores)
