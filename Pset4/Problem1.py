@@ -11,7 +11,7 @@ Scoring:
      We have defined the dictionary SCRABBLE_LETTER_VALUES that maps each lowercase letter to its Scrabble letter value.
 
     -Be sure to check that the hand actually has 1 'w', 2 'e's, and 1 'd' before scoring the word!
-""""
+"""
 
 def getWordScore(word, n):
     """
