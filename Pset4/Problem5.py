@@ -1,3 +1,7 @@
+"""
+Write the code that implements the playHand function
+"""
+
 def playHand(hand, wordList, n):
     """
     Allows the user to play the given hand, as follows:
