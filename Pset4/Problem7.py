@@ -25,7 +25,7 @@ def playGame(wordList):
           game with the selected hand, using compPlayHand.
 
     4) After the computer or user has played the hand, repeat from step 1
-
+    
     wordList: list (string)
     """
     
