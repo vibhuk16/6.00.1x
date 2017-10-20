@@ -195,6 +195,7 @@ def playHand(hand, wordList, n):
       n: integer (HAND_SIZE; i.e., hand size required for additional points)
       
     """
+
     total_score = 0
     while calculateHandlen(hand) > 0 :
         print("Current Hand: ",end="")
@@ -230,6 +231,7 @@ def playGame(wordList):
  
     2) When done playing the hand, repeat from step 1    
     """
+
     hand = None
     user = input("Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
     while user != "e":
