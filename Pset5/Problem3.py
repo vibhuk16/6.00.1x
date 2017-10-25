@@ -36,20 +36,19 @@ class CiphertextMessage(Message):
         and the decrypted message text using that shift value
         """
         
-        word_list = load_words(WORDLIST_FILENAME)
+        wordList = load_words(WORDLIST_FILENAME)
         shift = 0
         total = 0
-        max_shift = (0, 0)
+        maxShift = (0, 0)
         while shift <= 26:
-            current_total = 0
-            decrypted_msg = self.apply_shift(-shift)
-            crypted_words = decrypted_msg.split()
-            for word in crypted_words:
-                if is_word(word_list, word):
-                    current_total += 1
-
-            if current_total > total:
-                total = current_total
-                max_shift = (26 - shift, decrypted_msg)
+            currentTotal = 0
+            decryptedMessage = self.apply_shift(-shift)
+            cryptedWords = decryptedMessage.split()
+            for word in cryptedWords:
+                if is_word(wordList, word):
+                    currentTotal += 1
+            if currentTotal > total:
+                total = currentTotal
+                maxShift = (26 - shift, decryptedMessage)
             shift += 1
-        return max_shift
+        return maxShift
