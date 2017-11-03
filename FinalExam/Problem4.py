@@ -5,7 +5,6 @@ def isPermutation(list1,list2):
     
       1)The lists have the same number of elements
       2)List elements appear the same number of times in both lists
-      
     """
     
     if len(list1) != len(list2):
